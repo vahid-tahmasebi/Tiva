@@ -1,9 +1,9 @@
 <?php
 // EDITED IN TIVA V5.5.2
 get_header();
-get_template_part('template-parts/header');
-get_template_part('template-parts/top-menu');
-$tiva_options = get_option('tiva_options');
+//get_template_part('template-parts/header');
+//get_template_part('template-parts/top-menu');
+//$tiva_options = get_option('tiva_options');
 ?>
 <div class="container login-wrapper v3-login-user">
 
@@ -65,7 +65,7 @@ $tiva_options = get_option('tiva_options');
 </div>
 
 <?php
-get_template_part('template-parts/footer');
+//get_template_part('template-parts/footer');
 get_footer();
 ?>
 
