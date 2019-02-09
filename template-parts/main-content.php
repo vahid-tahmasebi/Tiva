@@ -1,5 +1,5 @@
 <?php $tiva_options = get_option('tiva_options'); ?>
-<?php get_template_part('template-parts/new-options/Box-top-slider'); ?>
+<?php get_template_part('template-parts/option/Box-top-slider'); ?>
 <div class="container" id="single">
     <div class="main-content-wrapper hamyar-home ">
         <div class="row">

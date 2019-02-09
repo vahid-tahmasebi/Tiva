@@ -22,7 +22,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
 <div class="clearfix"></div>
 <footer id="footer"
         class="footer <?php echo (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins'))) === false) ? 'footerMarginTop' : '' ?> <?php echo (isset($_COOKIE['woocommerce_recently_viewed'])) ? '' : 'footerMarginTop' ?>">
-    <?php get_template_part('template-parts/new-options/footer-top');?>
+    <?php get_template_part('template-parts/option/footer-top');?>
     <div class="footer-query-wrapper">
         <?php
         $count_users = count_users();

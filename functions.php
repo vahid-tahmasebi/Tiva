@@ -95,7 +95,8 @@ function tiva_setup()
     ));
     //register nav menu
     $tiva_menu = array(
-        'tiva_header_main_menu' => __('منوی  صفحه اصلی (بالا) ', 'tiva'),
+        'tiva_header_top_main_menu' => __('منوی  صفحه اصلی (اول) ', 'tiva'),
+        'tiva_header_main_menu' => __('منوی  صفحه اصلی (دوم) ', 'tiva'),
         'tiva_store_header_main_menu' => __('منوی صفحات فروشگاه (بالا) ', 'tiva'),
         'tiva_footer_main_menu' => __('منوی دسترسی سریع فوتر(یک سطحی) ', 'tiva'),
     );

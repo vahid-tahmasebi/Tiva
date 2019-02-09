@@ -177,7 +177,7 @@ remove_product_description_add_cart_button($post->ID);
 <div class=" card-wrapper product-excerpt-wrapper">
     <div class="product-excerpt">
         <h2>
-            <span> معرفی کوتاه محصول :  <?php the_title() ?></span>
+            <span> معرفی کوتاه :  <?php the_title() ?></span>
         </h2>
         <p>
             <?php echo get_the_excerpt(get_the_ID()) ?>

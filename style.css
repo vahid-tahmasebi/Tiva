@@ -13055,7 +13055,7 @@ div.show-video-wrapper {
   background-color: #28353d !important;
   height: 45px;
   direction: rtl;
-  border-radius: 6px;
+  border-radius: 6px 6px 0px 0px !important;
 }
 .box-header span.box-title {
   margin: 0;

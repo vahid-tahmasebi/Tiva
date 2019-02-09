@@ -59,6 +59,19 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
         </a>
     <?php endif; ?></div>
 <!--/********************************* END ADD IN TIVA V5.8.1 ******************************/-->
+<div class="header-menu-top hidden-xs hidden-sm hidden-md">
+    <div class="header-menu-inner-top container-in-top-menu hidden-xs hidden-sm hidden-md">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="menutop">
+                    <?php wp_nav_menu(array('theme_location' => 'tiva_header_top_main_menu', 'container_class' => 'theader-menu')); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <header id="header">
     <div class="container">
         <div class="logo-search-section hidden-sm hidden-xs">
