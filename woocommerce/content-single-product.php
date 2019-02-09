@@ -76,24 +76,29 @@ remove_product_description_add_cart_button($post->ID);
             <div class="product-config-right">
                 <div class="product-config-details">
                     <div class="option-seller">
+
                         <div class="option-seller-item">
-                            <i class="fa fa-shield garanti" aria-hidden="true"></i>
+                            <img src="<?php echo get_template_directory_uri() . '/images/man-min.png' ?>">
                             <span class="garanti"><?php echo get_post_meta($post->ID, 'product_garanti', true) ?></span>
                         </div>
+
                         <div class="option-seller-details">
+
                             <div class="option-seller-item">
-                                <i class="fa fa-building shop" aria-hidden="true"></i>
+                                <img src="<?php echo get_template_directory_uri() . '/images/certification-min.png' ?>">
                                 <span><?php echo get_post_meta($post->ID, 'shoper_input', true) ?></span>
                             </div>
-                            <div class="option-seller-item">
-                                <i class="fa fa-shopping-bag shopping-bag" aria-hidden="true"></i>
-                                <span><?php echo get_post_meta($post->ID, 'bastebandi_input', true) ?></span>
 
-                            </div>
                             <div class="option-seller-item">
-                                <i class="fa fa-truck truck" aria-hidden="true"></i>
+                                <img src="<?php echo get_template_directory_uri() . '/images/calendar-min.png' ?>">
+                                <span><?php echo get_post_meta($post->ID, 'bastebandi_input', true) ?></span>
+                            </div>
+
+                            <div class="option-seller-item">
+                                <img src="<?php echo get_template_directory_uri() . '/images/presentation-min.png' ?>">
                                 <span><?php echo get_post_meta($post->ID, 'haml_input', true) ?></span>
                             </div>
+                            
 
                         </div>
                     </div>
@@ -125,7 +130,7 @@ remove_product_description_add_cart_button($post->ID);
                             <a href="<?php echo (isset($tiva_options['store-index-page']['shipping-express-page'])) ? get_page_link((int)$tiva_options['store-index-page']['shipping-express-page']) : '#' ?>"
                                target="_blank">
                                 <img src="<?php echo site_url() . '/wp-content/themes/tiva/images/shipping-express.png' ?>"
-                                     title="تحویل اکسپرس" alt="تحویل اکسپرس">
+                                     title="سرعت در دانلود" alt="سرعت در دانلود">
                                 <span>تحویل اکسپرس</span>
                             </a>
                         </li>
@@ -133,7 +138,7 @@ remove_product_description_add_cart_button($post->ID);
                             <a href="<?php echo (isset($tiva_options['store-index-page']['day-guarantee-page'])) ? get_page_link((int)$tiva_options['store-index-page']['day-guarantee-page']) : '#' ?>"
                                target="_blank">
                                 <img src="<?php echo site_url() . '/wp-content/themes/tiva/images/day-guarantee.png' ?>"
-                                     title=" ٧ روز ضمانت بازگشت" alt=" ٧ روز ضمانت بازگشت">
+                                     title="24 ساعت ضمانت" alt=" 24 ساعت ضمانت">
                                 <span> ٧ روز ضمانت بازگشت</span>
                             </a>
                         </li>
@@ -141,7 +146,7 @@ remove_product_description_add_cart_button($post->ID);
                             <a href="<?php echo (isset($tiva_options['store-index-page']['cod-page'])) ? get_page_link((int)$tiva_options['store-index-page']['cod-page']) : '#' ?>"
                                target="_blank">
                                 <img src="<?php echo site_url() . '/wp-content/themes/tiva/images/cod.png' ?>"
-                                     title="پرداخت در محل" alt="پرداخت در محل">
+                                     title="پرداخت با رمز دوم" alt="پرداخت با رمز دوم">
                                 <span>پرداخت در محل</span>
                             </a>
                         </li>
@@ -157,7 +162,7 @@ remove_product_description_add_cart_button($post->ID);
                             <a href="<?php echo (isset($tiva_options['store-index-page']['certificate'])) ? get_page_link((int)$tiva_options['store-index-page']['certificate']) : '#' ?>"
                                target="_blank">
                                 <img src="<?php echo site_url() . '/wp-content/themes/tiva/images/certificate.png' ?>"
-                                     title="ضمانت اصل بودن کالا" alt="ضمانت اصل بودن کالا">
+                                     title="ضمانت اثر بخشی آموزشی" alt="ضمانت اثر بخشی آموزشی">
                                 <span>ضمانت اصل بودن کالا</span>
                             </a>
                         </li>
@@ -172,8 +177,7 @@ remove_product_description_add_cart_button($post->ID);
 <div class=" card-wrapper product-excerpt-wrapper">
     <div class="product-excerpt">
         <h2>
-            <span>معرفی اجمالی محصول</span>
-            <?php the_title() ?>
+            <span> معرفی کوتاه محصول :  <?php the_title() ?></span>
         </h2>
         <p>
             <?php echo get_the_excerpt(get_the_ID()) ?>
