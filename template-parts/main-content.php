@@ -1,4 +1,5 @@
 <?php $tiva_options = get_option('tiva_options'); ?>
+<?php get_template_part('template-parts/new-options/Box-top-slider'); ?>
 <div class="container" id="single">
     <div class="main-content-wrapper hamyar-home ">
         <div class="row">
@@ -28,7 +29,6 @@
 
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 main-content">
 
-                <!--/********************************* BEGIN ADD IN TIVA V5.8  ****************************/-->
                 <div class="mobile-search hidden-lg hidden-md">
                     <div class="mobile-search-inner">
                         <form name="search-input" class="search-form  mobile-search-form">
@@ -47,8 +47,6 @@
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <!--/********************************* END ADD IN TIVA V5.8 ******************************/-->
-
                 <div class="h-slider-wrapper">
                     <?php get_template_part('template-parts/main-slider'); ?>
                 </div>
