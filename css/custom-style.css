@@ -169,7 +169,7 @@ input, textarea:-moz-placeholder { /* Firefox 18- */
 .singlepost-box-header {
     height: 60px;
     line-height: 60px;
-    background: #28353d;
+    background: #28353d !important;
     padding: 0 15px;
     font-size: 16px;
     border-radius: 5px 5px 0 0;
@@ -1202,9 +1202,9 @@ div.post-wrapper div.post-overlay:hover {
 
 #single div.main-content header h2.post-title {
     display: inline-block;
-    margin-top: 10px;
-    color: #fff;
-    font-size: 20px;
+    margin-top: 10px !important;
+    color: #fff !important;
+    font-size: 20px !important;
     line-height: initial !important;
 }
 
