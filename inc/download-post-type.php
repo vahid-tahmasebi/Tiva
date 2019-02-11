@@ -44,8 +44,6 @@ function tiva_add_download_custom_post_type(){
     register_post_type('download', $args);
 }
 
-
-// custom taxonomy
 // Register Custom Taxonomy
 add_action( 'init', 'add_custom_taxonomy_themes', 0 );
 function add_custom_taxonomy_themes() {
@@ -125,8 +123,6 @@ function add_custom_taxonomy_themes() {
 
 }
 
-
-// custom taxonomy
 // Register Custom Taxonomy
 add_action( 'init', 'add_custom_taxonomy_plugins', 0 );
 function add_custom_taxonomy_plugins() {

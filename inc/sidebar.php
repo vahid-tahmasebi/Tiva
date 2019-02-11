@@ -13,7 +13,7 @@ register_sidebar($args);
 
 $args = array(
     'name' => __('سایدبار صفحه دانلود', 'tiva'),
-    'id' => 'tiva_single_product_sidebar',
+    'id' => 'tiva_single_download_sidebar',
     'description' => '',
     'class' => '',
     'before_widget' => '<div class="card-wrapper sidebar-wrapper">',
@@ -24,9 +24,9 @@ $args = array(
 register_sidebar($args);
 
 
-
 // tiva home page sidebar function
-function tiva_home_page_sidebar_function(){
+function tiva_home_page_sidebar_function()
+{
     register_sidebar(array(
         'name' => __('سایدبار صفحه اصلی', 'tiva'),
         'id' => 'home_page_sidebar',
@@ -37,11 +37,12 @@ function tiva_home_page_sidebar_function(){
         'after_title' => ' </span></header>'
     ));
 }
-
 add_action('widgets_init', 'tiva_home_page_sidebar_function');
 
+
 // tiva home page sidebar function
-function tiva_index_woocommerce_page_sidebar_function(){
+function tiva_index_woocommerce_page_sidebar_function()
+{
     register_sidebar(array(
         'name' => __(' سایدبار صفحه اصلی فروشگاه', 'tiva'),
         'id' => 'index_woocommerce_sidebar',
@@ -52,11 +53,12 @@ function tiva_index_woocommerce_page_sidebar_function(){
         'after_title' => ' </span></header>'
     ));
 }
-
 add_action('widgets_init', 'tiva_index_woocommerce_page_sidebar_function');
 
+
 // tiva archive page sidebar function
-function tiva_archive_woocommerce_page_sidebar_function(){
+function tiva_archive_woocommerce_page_sidebar_function()
+{
     register_sidebar(array(
         'name' => __(' سایدبار صفحه آرشیو فروشگاه', 'tiva'),
         'id' => 'archive_page_woocommerce_sidebar',
@@ -67,11 +69,12 @@ function tiva_archive_woocommerce_page_sidebar_function(){
         'after_title' => ' </span></header>'
     ));
 }
-
 add_action('widgets_init', 'tiva_archive_woocommerce_page_sidebar_function');
 
+
 // tiva video single page sidebar function add in tiva v4
-function tiva_video_single_page_sidebar_function(){
+function tiva_video_single_page_sidebar_function()
+{
     register_sidebar(array(
         'name' => __(' سایدبار صفحه ویدیو', 'tiva'),
         'id' => 'video_single_page_sidebar',
@@ -82,5 +85,4 @@ function tiva_video_single_page_sidebar_function(){
         'after_title' => ' </span></header>'
     ));
 }
-
 add_action('widgets_init', 'tiva_video_single_page_sidebar_function');

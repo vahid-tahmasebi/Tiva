@@ -323,7 +323,7 @@ get_template_part('template-parts/top-menu');
                 //                var_dump($show_sidebar);
                 // Checks and displays the retrieved value
                 if (empty($show_sidebar)) {
-                    get_sidebar();
+                    get_sidebar('post');
                 }
                 ?>
 

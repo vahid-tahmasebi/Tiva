@@ -12989,8 +12989,8 @@ body.lobibox-open {
 .header-menu-top{height: 50px;background-color:#28353d !important;line-height: 50px;}
 .header-menu-inner-top .menutop ul {list-style-type: none;list-style: none;list-style-image: none;margin-bottom: 0px !important;}
 .header-menu-inner-top .menutop ul li {padding: 10px 2px 1px 10px;display: inline;}
-.header-menu-inner-top .menutop ul li a {color: #ffffff;font-weight: 400;font-size: 13px;}
-.header-menu-inner-top .menutop ul li a:hover{color: #ffffff;-webkit-transition:color 1s;-o-transition:color 1s;transition: color 1s; }
+.header-menu-inner-top .menutop ul li a {color: #aeb6b8;font-weight: 400;font-size: 13px;}
+.header-menu-inner-top .menutop ul li a:hover{color: #ffffff;-webkit-transition:color 0.5s;-o-transition:color 0.5s;transition: color 0.5s; }
 .container-in-top-menu {padding-right: 340px;padding-left: 15px;margin-right:10px ;margin-left: auto;}
 
 /*************************************** Menu Header Register  ************************************/
@@ -13211,6 +13211,7 @@ i.fa.fa-chevron-up {
   margin-right: 5px;
 
 }
+
 /**************************************** Box Tasvire Shakhes Download *****************************/
 .box-img-shakhes-download{
   width:846px;
