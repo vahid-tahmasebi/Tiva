@@ -13422,8 +13422,8 @@ i.fa.fa-chevron-up {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);}
 .gform_wrapper .gform_page_footer {
-  margin: 14px 0;
-  width: 20%;
+  margin: 40px 0;
+  width: 100%;
   border-top: 1px dotted #CCC;
   padding: 16px 0 0;
   clear: both;
