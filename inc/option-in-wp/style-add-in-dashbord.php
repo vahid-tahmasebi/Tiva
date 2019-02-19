@@ -24,5 +24,7 @@ function admin_custom_css(){
  #adminmenu .wp-not-current-submenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu {min-width: 175px !important;}
   #wpadminbar #wp-admin-bar-my-sites a.ab-item, #wpadminbar #wp-admin-bar-site-name a.ab-item {font-family: IRANsans !important;}   
   #wpadminbar .quicklinks>ul>li>a { padding: 0 7px 0 8px; font-family: IRANsans!important;}
+
+
         </style>';
 }

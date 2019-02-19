@@ -13428,3 +13428,26 @@ i.fa.fa-chevron-up {
   padding: 16px 0 0;
   clear: both;
 }
+/****************************************************************************************/
+#wpadminbar #wp-admin-bar-my-sites a.ab-item, #wpadminbar #wp-admin-bar-site-name a.ab-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: IRANsans;
+}
+#wpadminbar .ab-label {
+  display: inline-block;
+  height: 32px;
+  font-family: IRANsans;
+}
+#wpadminbar .quicklinks>ul>li>a {
+  padding: 0 7px 0 8px;
+  font-family: IRANsans;
+}
+#wpadminbar .quicklinks .menupop ul li .ab-item, #wpadminbar .quicklinks .menupop ul li a strong, #wpadminbar .quicklinks .menupop.hover ul li .ab-item, #wpadminbar .shortlink-input, #wpadminbar.nojs .quicklinks .menupop:hover ul li .ab-item {
+  line-height: 26px;
+  height: 26px;
+  white-space: nowrap;
+  min-width: 140px;
+  font-family: IRANsans !important;
+}

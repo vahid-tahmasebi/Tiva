@@ -9,14 +9,14 @@ $tiva_options = get_option('tiva_options')
             <div class="vip-plan-inner">
                 <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp ">
                     <div class="vip-plan-dis">
-                        <span class="vip-lable">عضویت ویژه</span>
-                        <span class="vip-plan-title">با عضویت ویژه یک قدم از دیگران جلوتر باشید.</span>
+                        <span class="vip-lable">عضویت ویژه کارسازشو</span>
+                        <span class="vip-plan-title">با عضویت ویژه بدون محدودیت به تمام قسمت های سایت کارسازشو دسترسی داشته باشید.</span>
                         <p class="vip-plan-dis">
                             با عضویت ویژه به مقالات و فایل ها و ویدیو های مخصوص کاربران ویژه سایت دسترسی خواهید
                             داشت و می توانید بدون محدودیت آن ها را تماشا و مطالعه و دانلود کنید.
                             <br>
                             <strong>
-                                با عضویت ویژه یک قدم از دیگران جلوتر خواهید بود.
+                                برای تهیه هر کدام از پلن های ابتدا باید در سایت لاگین کرده باشید.
                             </strong>
                         </p>
                         <a target="_blank"
@@ -30,7 +30,8 @@ $tiva_options = get_option('tiva_options')
                             <span class="h4 mb-1">پلن طلایی</span>
                             <span class="d-block">
                      <span class="month"><?php echo tiva_get_vip_plan_mount('gold') ?></span>
-                    <span class="display-4 font-weight-bold amount-plan"><?php echo tiva_change_number(number_format((int)tiva_get_vip_plan_price('gold'))) ?></span>
+                    <span
+                        class="display-4 font-weight-bold amount-plan"><?php echo tiva_change_number(number_format((int)tiva_get_vip_plan_price('gold'))) ?></span>
                     <span class="align-top toman">تومان</span>
 
                   </span>
@@ -71,6 +72,13 @@ $tiva_options = get_option('tiva_options')
                         <span class="fa fa-check u-icon__inner"></span>
                       </span>
                                     دسترسی به مطالب دانلودی ویژه
+
+                                <li class="d-flex align-items-center u-pricing-v1__list-item py-2">
+                      <span class="u-icon u-icon-primary--air u-icon--xs rounded-circle mr-3">
+                        <span class="fa fa-check u-icon__inner"></span>
+                      </span>
+                                    امکان دانلود قالب وافزونه حرفه ای
+
                                 </li>
                                 <li class="d-flex align-items-center u-pricing-v1__list-item py-2">
                       <span class="u-icon u-icon-primary--air u-icon--xs rounded-circle mr-3">
@@ -84,7 +92,7 @@ $tiva_options = get_option('tiva_options')
                                 </li>
                             </ul>
                             <a href="<?php echo (is_user_logged_in()) ? site_url() . '/user-panel/buy-plan?type=gold' : '#' ?>" <?php echo tiva_get_modal_user_login(); ?>
-                               class="price-plan-btn">شروع کن</a>
+                               class="price-plan-btn">این پلن را میخواهم</a>
                         </div>
                         <!-- End Content -->
                     </div>
@@ -95,7 +103,8 @@ $tiva_options = get_option('tiva_options')
                             <span class="h4 mb-1">پلن نقره ای</span>
                             <span class="d-block">
                      <span class="month"><?php echo tiva_get_vip_plan_mount('silver') ?></span>
-                     <span class="display-4 font-weight-bold amount-plan"><?php echo tiva_change_number(number_format((int)tiva_get_vip_plan_price('silver'))) ?></span>
+                     <span
+                         class="display-4 font-weight-bold amount-plan"><?php echo tiva_change_number(number_format((int)tiva_get_vip_plan_price('silver'))) ?></span>
                     <span class="align-top toman">تومان</span>
 
                   </span>
@@ -136,6 +145,13 @@ $tiva_options = get_option('tiva_options')
                         <span class="fa fa-check u-icon__inner"></span>
                       </span>
                                     دسترسی به مطالب دانلودی ویژه
+                                </li>
+                                <li class="d-flex align-items-center u-pricing-v1__list-item py-2">
+                      <span class="u-icon u-icon-primary--air u-icon--xs rounded-circle mr-3">
+                        <span class="fa fa-check u-icon__inner"></span>
+                      </span>
+                                    امکان دانلود قالب وافزونه حرفه ای
+
                                 </li>
                                 <li class="d-flex align-items-center u-pricing-v1__list-item py-2">
                       <span class="u-icon u-icon-primary--air u-icon--xs rounded-circle mr-3">
@@ -147,7 +163,7 @@ $tiva_options = get_option('tiva_options')
                                 </li>
                             </ul>
                             <a href="<?php echo (is_user_logged_in()) ? site_url() . '/user-panel/buy-plan?type=silver' : '#' ?>" <?php echo tiva_get_modal_user_login(); ?>
-                               class="price-plan-btn">شروع کن</a>
+                               class="price-plan-btn">این پلن را میخواهم</a>
                         </div>
 
                         <!-- End Content -->
@@ -159,7 +175,8 @@ $tiva_options = get_option('tiva_options')
                             <span class="h4 mb-1">پلن برنزی</span>
                             <span class="d-block">
                      <span class="month"><?php echo tiva_get_vip_plan_mount('bronze') ?></span>
-                    <span class="display-4 font-weight-bold amount-plan"><?php echo tiva_change_number(number_format((int)tiva_get_vip_plan_price('bronze'))) ?></span>
+                    <span
+                        class="display-4 font-weight-bold amount-plan"><?php echo tiva_change_number(number_format((int)tiva_get_vip_plan_price('bronze'))) ?></span>
                     <span class="align-top toman">تومان</span>
 
                   </span>
@@ -205,13 +222,20 @@ $tiva_options = get_option('tiva_options')
                       <span class="u-icon u-icon-primary--air u-icon--xs rounded-circle mr-3">
                         <span class="fa fa-check u-icon__inner"></span>
                       </span>
+                                    امکان دانلود قالب وافزونه حرفه ای
+
+                                </li>
+                                <li class="d-flex align-items-center u-pricing-v1__list-item py-2">
+                      <span class="u-icon u-icon-primary--air u-icon--xs rounded-circle mr-3">
+                        <span class="fa fa-check u-icon__inner"></span>
+                      </span>
                                     <?php echo tiva_change_number(number_format((int)tiva_get_vip_plan_gift_credit('bronze'))) ?>
                                     تومان هدیه کیف
                                     پول
                                 </li>
                             </ul>
                             <a href="<?php echo (is_user_logged_in()) ? site_url() . '/user-panel/buy-plan?type=bronze' : '#' ?>" <?php echo tiva_get_modal_user_login(); ?>
-                               class="price-plan-btn">شروع کن</a>
+                               class="price-plan-btn">این پلن را میخواهم</a>
                         </div>
                         <!-- End Content -->
                     </div>
