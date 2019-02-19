@@ -558,7 +558,7 @@ function tiva_add_admin_menu_in_admin_toolbar($wp_admin_bar)
     $admin_panel_url = site_url() . '/admin-panel/admin-dashboard';
     $args = array(
         'id' => 'tiva_admin_panel',
-        'title' => 'پنل اختصاصی وب مستر تیوا',
+        'title' => 'پنل مدیریت وبمستر سایت',
         'href' => $admin_panel_url,
         'meta' => array('class' => 'my-toolbar-page')
     );

@@ -11,7 +11,7 @@ $date = new jDateTime(true, true, 'Asia/Tehran');
 <div class="page-bar">
     <ul class="page-breadcrumb">
         <li>
-            <a href="/admin-panel/admin-dashboard"><?php _e('پنل اختصاصی مدیریت تیوا', 'tiva'); ?></a>
+            <a href="/admin-panel/admin-dashboard"><?php _e('پنل اختصاصی مدیریت وب مستر', 'tiva'); ?></a>
             <i class="fa fa-circle"></i>
         </li>
         <li>
