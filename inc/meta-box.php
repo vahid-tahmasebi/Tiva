@@ -368,38 +368,40 @@ function tiva_product_custom_data_meta_box_callback($post)
     $haml_input = get_post_meta($post->ID, 'haml_input', true);
     ?>
 
-    <div class="product-custom-data-metabox">
-        <br>
-        <div class="box-input-wrapper">
-            <label for="garanti-input">مدرس دوره مد نظر</label>
+        <div class="product-custom-data-metabox">
             <br>
-            <input type="text" style="width: 100%;" id="garanti-input" value="<?php echo $product_garanti ?>"
-                   placeholder="متن مربوط به مدرس دوره مد نظر را وارد کنید" name="product_garanti">
-        </div>
-        <br>
-        <div class="box-input-wrapper">
-            <label for="shoper-input">گارانتی محصول آموزشی</label>
+            <div class="box-input-wrapper" style="font-family: IRANSans!important; font-weight: 900;">
+                <label for="garanti-input">مدرس دوره مد نظر</label>
+                <br>
+                <input type="text" style="width: 100%;" id="garanti-input" value="<?php echo $product_garanti ?>"
+                       placeholder="متن مربوط به مدرس دوره مد نظر را وارد کنید" name="product_garanti">
+            </div>
             <br>
-            <input type="text" style="width: 100%;" id="shoper-input" value="<?php echo $shoper_input; ?>"
-                   placeholder="متن مربوط به گارانتی محصول آموزشی را وارد کنید" name="shoper_input">
-        </div>
-        <br>
-        <div class="box-input-wrapper">
-            <label for="bastebandi-input">زمان آموزشی و حجم فایل</label>
+            <div class="box-input-wrapper" style="font-family: IRANSans!important; font-weight: 900;">
+                <label for="shoper-input">گارانتی محصول آموزشی</label>
+                <br>
+                <input type="text" style="width: 100%;" id="shoper-input" value="<?php echo $shoper_input; ?>"
+                       placeholder="متن مربوط به گارانتی محصول آموزشی را وارد کنید" name="shoper_input">
+            </div>
             <br>
-            <input type="text" style="width: 100%;" id="bastebandi-input" value="<?php echo $bastebandi_input; ?>"
-                   placeholder="متن مربوط به زمان آموزشی و حجم فایل را وارد کنید" name="bastebandi_input">
-        </div>
-        <br>
-        <div class="box-input-wrapper">
-            <label for="haml-input">تعداد خرید های این محصول</label>
+            <div class="box-input-wrapper" style="font-family: IRANSans!important; font-weight: 900;">
+                <label for="bastebandi-input">زمان آموزشی و حجم فایل</label>
+                <br>
+                <input type="text" style="width: 100%;" id="bastebandi-input" value="<?php echo $bastebandi_input; ?>"
+                       placeholder="متن مربوط به زمان آموزشی و حجم فایل را وارد کنید" name="bastebandi_input">
+            </div>
             <br>
-            <input type="text" style="width: 100%;" id="haml-input" value="<?php echo $haml_input; ?>"
-                   placeholder="متن مربوط به تعداد خرید های این محصول را وارد کنید" name="haml_input">
+            <div class="box-input-wrapper" style="font-family: IRANSans!important; font-weight: 900;">
+                <label for="haml-input">تعداد خرید های این محصول</label>
+                <br>
+                <input type="text" style="width: 100%;" id="haml-input" value="<?php echo $haml_input; ?>"
+                       placeholder="متن مربوط به تعداد خرید های این محصول را وارد کنید" name="haml_input">
+            </div>
         </div>
-    </div>
+
+
     <?php
-}  // add to tiva in v3
+}  
 
 ///////////////////////////////////////////////////////////////////////
 

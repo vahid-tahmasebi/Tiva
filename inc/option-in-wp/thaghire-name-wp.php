@@ -8,6 +8,7 @@ function mw_translate_words_array( $translated ) {
         'نوشته‌ها' => 'مقالات سایت',
         'افزودن نوشته' => 'مقاله جدید',
         'پیشخوان' => 'پنل مدیریت',
+        ''=>''
     );
     $translated = str_ireplace(  array_keys($words),  $words,  $translated );
     return $translated;
