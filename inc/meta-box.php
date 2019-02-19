@@ -24,7 +24,7 @@ function tiva_post_meta_box()
         array(
             '__block_editor_compatible_meta_box' => true,
         )
-        );
+    );
     // add in tiva v 4 video post met bax
     add_meta_box('tiva_page_disable_meta_box', __('تنظیمات برگه', 'tiva'), 'tiva_page_disable_meta_box_callback', 'page', 'side', 'high');
     add_meta_box('tiva_download_meta_box', __('تنظیمات دانلودها', 'tiva'), 'tiva_download_meta_box_callback', 'download', 'side', 'high');
@@ -371,31 +371,31 @@ function tiva_product_custom_data_meta_box_callback($post)
     <div class="product-custom-data-metabox">
         <br>
         <div class="box-input-wrapper">
-            <label for="garanti-input">متن گارانتی محصول</label>
+            <label for="garanti-input">مدرس دوره مد نظر</label>
             <br>
             <input type="text" style="width: 100%;" id="garanti-input" value="<?php echo $product_garanti ?>"
-                   placeholder="متن مربوط به گارانتی محصول را وارد کنید" name="product_garanti">
+                   placeholder="متن مربوط به مدرس دوره مد نظر را وارد کنید" name="product_garanti">
         </div>
         <br>
         <div class="box-input-wrapper">
-            <label for="shoper-input">متن فروشنده محصول</label>
+            <label for="shoper-input">گارانتی محصول آموزشی</label>
             <br>
             <input type="text" style="width: 100%;" id="shoper-input" value="<?php echo $shoper_input; ?>"
-                   placeholder="متن مربوط به فروشنده محصول  را وارد کنید" name="shoper_input">
+                   placeholder="متن مربوط به گارانتی محصول آموزشی را وارد کنید" name="shoper_input">
         </div>
         <br>
         <div class="box-input-wrapper">
-            <label for="bastebandi-input">متن بسته بندی محصول</label>
+            <label for="bastebandi-input">زمان آموزشی و حجم فایل</label>
             <br>
             <input type="text" style="width: 100%;" id="bastebandi-input" value="<?php echo $bastebandi_input; ?>"
-                   placeholder="متن مربوط به بسته بندی محصول را وارد کنید" name="bastebandi_input">
+                   placeholder="متن مربوط به زمان آموزشی و حجم فایل را وارد کنید" name="bastebandi_input">
         </div>
         <br>
         <div class="box-input-wrapper">
-            <label for="haml-input">متن ‌ارسال محصول</label>
+            <label for="haml-input">تعداد خرید های این محصول</label>
             <br>
             <input type="text" style="width: 100%;" id="haml-input" value="<?php echo $haml_input; ?>"
-                   placeholder="متن مربوط به ارسال محصول را وارد کنید" name="haml_input">
+                   placeholder="متن مربوط به تعداد خرید های این محصول را وارد کنید" name="haml_input">
         </div>
     </div>
     <?php
