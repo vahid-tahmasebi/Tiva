@@ -13175,3 +13175,34 @@ i.fa.fa-chevron-up {
   margin-top: 7px !important;
   font-size: larger !important;
 }
+/********************************************  New Style in Login And Reg Ress ********************/
+.logino{
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: inherit;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px 10px 5px;
+  background: 28353d;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #28353d, #4158d0);
+}
+.span-in-buttom-register{
+  color: #ffffff !important;
+  font-weight: 900 !important;
+
+}
+.span-in-buttom-register:hover{
+  color:red;
+  font-weight: 200;
+  font-size: 20px;
+
+}
+

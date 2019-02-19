@@ -4,43 +4,32 @@
     <div class="op-panel-wrapper">
         <div class="op-panel-header">
             <div class="header-title">
-                <h4><?php _e('قالب مجله ای تیوا', 'tiva'); ?></h4>
+                <h4><?php _e('پنل تنظیمات کارسازشو', 'tiva'); ?></h4>
                 <small><?php $tiva = wp_get_theme();
                     echo 'V' . $tiva->get('Version') ?></small>
             </div>
             <div class="header-team-name">
                 <a href="http://www.kari-no.com"
-                   target="_blank"><?php _e('محصولی ایرانی و حرفه ای از تیم توسعه و برنامه نویسی کارینو', 'tiva'); ?></a>
+                   target="_blank"><?php _e('آموزش راه اندازی کسب و کار اینترنتی به صورت حرفه ای با کارسازشو', 'tiva'); ?></a>
             </div>
         </div>
         <div class="op-panel-inner">
             <div class="op-panel-sidebar">
                 <ul>
                     <li>
-                        <a data-toggle="collapse" href="#collapseExample"><i class="fa fa-cogs"
-                                                                             aria-hidden="true"></i><?php _e('تنظیمات عمومی', 'tiva'); ?>
+                        <a data-toggle="collapse" href="#collapseExample"><i class="fa fa-cogs" aria-hidden="true"></i><?php _e('تنظیمات عمومی سایت', 'tiva'); ?>
                             <i class="fa fa-chevron-down" style="margin-right: 5px;" aria-hidden="true"></i></a>
                         <ul class=" <?php echo ($default_tab === 'vip-register' || $default_tab === 'zarinpal' || $default_tab === 'ads-setting' || $default_tab === 'login-register-page' || $default_tab === 'index-page' || $default_tab === 'main-slider' || $default_tab === 'author-page' || $default_tab === 'single-page' || $default_tab === 'social-network' || $default_tab === 'single-post') ? 'collapse in' : 'collapse'; ?> op-panel-sub-menu"
                             id="collapseExample">
-                            <li class="<?php echo ($default_tab === 'index-page') ? 'menu-active' : ''; ?> "><a
-                                        href="<?php echo add_query_arg('tab', 'index-page'); ?>"><?php _e(' صفحه اصلی', 'tiva'); ?></a>
-                            </li>
-                            <li class="<?php echo ($default_tab === 'author-page') ? 'menu-active' : ''; ?> "><a
-                                        href="<?php echo add_query_arg('tab', 'author-page'); ?>"><?php _e(' صفحه نویسنده', 'tiva'); ?></a>
-                            </li>
-                            <li class="<?php echo ($default_tab === 'single-page') ? 'menu-active' : ''; ?> "><a
-                                        href="<?php echo add_query_arg('tab', 'single-page'); ?>"><?php _e('صفحه مقاله', 'tiva'); ?></a>
-                            </li>
-                            <li class="<?php echo ($default_tab === 'social-network') ? 'menu-active' : ''; ?> "><a
-                                        href="<?php echo add_query_arg('tab', 'social-network'); ?>"><?php _e('شبکه های اجتماعی', 'tiva'); ?></a>
-                            </li>
-                            <li class="<?php echo ($default_tab === 'ads-setting') ? 'menu-active' : ''; ?> "><a
-                                        href="<?php echo add_query_arg('tab', 'ads-setting'); ?>"><?php _e('تبلیغات', 'tiva'); ?></a>
-                            </li>
-                            <li class="<?php echo ($default_tab === 'main-slider') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'main-slider'); ?>"><?php _e('تنظیمات اسلایدر', 'tiva'); ?></a></li>
-                            <li class="<?php echo ($default_tab === 'login-register-page') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'login-register-page'); ?>"><?php _e('صفحه لاگین و عضویت و بازیابی رمز عبور', 'tiva'); ?></a></li>
-                            <li class="<?php echo ($default_tab === 'zarinpal') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'zarinpal'); ?>"><?php _e('درگاه زرین پال', 'tiva'); ?></a></li>
-                            <li class="<?php echo ($default_tab === 'vip-register') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'vip-register'); ?>"><?php _e('عضویت ویژه', 'tiva'); ?></a></li>
+                            <li class="<?php echo ($default_tab === 'index-page') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'index-page'); ?>"><?php _e(' صفحه اصلی', 'tiva'); ?></a></li>
+                            <li class="<?php echo ($default_tab === 'author-page') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'author-page'); ?>"><?php _e(' صفحه نویسنده', 'tiva'); ?></a></li>
+                            <li class="<?php echo ($default_tab === 'single-page') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'single-page'); ?>"><?php _e('صفحه مقالات سایت', 'tiva'); ?></a></li>
+                            <li class="<?php echo ($default_tab === 'social-network') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'social-network'); ?>"><?php _e('شبکه های اجتماعی', 'tiva'); ?></a></li>
+                            <li class="<?php echo ($default_tab === 'ads-setting') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'ads-setting'); ?>"><?php _e('درخواست تبلیغ در سایت', 'tiva'); ?></a></li>
+                            <li class="<?php echo ($default_tab === 'main-slider') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'main-slider'); ?>"><?php _e('تنظیمات اسلایدر اصلی', 'tiva'); ?></a></li>
+                            <li class="<?php echo ($default_tab === 'login-register-page') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'login-register-page'); ?>"><?php _e(' لاگین،عضویت،بازیابی رمز عبور', 'tiva'); ?></a></li>
+                            <li class="<?php echo ($default_tab === 'zarinpal') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'zarinpal'); ?>"><?php _e('تنظیمات درگاه زرین پال', 'tiva'); ?></a></li>
+                            <li class="<?php echo ($default_tab === 'vip-register') ? 'menu-active' : ''; ?> "><a href="<?php echo add_query_arg('tab', 'vip-register'); ?>"><?php _e('تنظیمات عضویت ویژه', 'tiva'); ?></a></li>
                         </ul>
                     </li>
                     <li class="<?php echo ($default_tab === 'post-like') ? 'menu-active' : ''; ?>">

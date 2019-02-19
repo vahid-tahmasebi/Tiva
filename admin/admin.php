@@ -2,14 +2,14 @@
 function tiva_theme_options_panel()
 {
     global $theme_panel_option_page;
-    $theme_panel_option_page = add_menu_page('تنظیمات قالب تیوا', 'تنظیمات قالب تیوا', 'manage_options', 'tiva-theme-options', 'tiva_theme_option_panel_function', 'dashicons-admin-generic');
+    $theme_panel_option_page = add_menu_page('پنل تنظیمات سایت', 'پنل تنظیمات سایت', 'manage_options', 'tiva-theme-options', 'tiva_theme_option_panel_function', 'dashicons-welcome-widgets-menus');
 }
 
 add_action('admin_menu', 'tiva_theme_options_panel');
 function tiva_theme_option_panel_function()
 {
     echo '<div class="wrap"><div id="icon-options-general" class="icon32"><br></div>
-                <h2>تنظیمات قالب تیوا</h2></div>';
+                <h2>پنل تنظیمات سایت کارسازشو</h2></div>';
     $withe_list = array(
         'index-page',
         'author-page',
@@ -17,8 +17,8 @@ function tiva_theme_option_panel_function()
         'comment-like',
         'post-like',
         'main-slider',
-        'login-register-page', // add in tiva v3
-        'ads-setting', // add in tiva v4
+        'login-register-page',
+        'ads-setting',
         'social-network',
         'seo-page',
         'script',
@@ -76,13 +76,13 @@ function tiva_theme_option_panel_function()
                 $tiva_options['social-network']['twitter-show'] = $_POST['twitter-show'];
                 $tiva_options['social-network']['google-plus-url'] = sanitize_text_field($_POST['google-plus-url']);
                 $tiva_options['social-network']['google-plus-show'] = $_POST['google-plus-show'];
-                /********************************* BEGIN ADD IN TIVA V5.8  ***************************/
+                /********************************* BEGIN ADD IN  ***************************/
                 $tiva_options['social-network']['whatsapp-url'] = sanitize_text_field($_POST['whatsapp-url']);
                 $tiva_options['social-network']['whatsapp-show'] = $_POST['whatsapp-show'];
 
                 $tiva_options['social-network']['aparat-url'] = sanitize_text_field($_POST['aparat-url']);
                 $tiva_options['social-network']['aparat-show'] = $_POST['aparat-show'];
-                /********************************* END ADD IN TIVA V5.8 ******************************/
+                /********************************* END ADD IN  ******************************/
                 break;
             case 'post-like':
                 $tiva_options['post-like']['post_like_show'] = $_POST['post_like_show'];
@@ -99,10 +99,10 @@ function tiva_theme_option_panel_function()
                 $tiva_options['single-page']['related-post-count'] = $_POST['related-post-count'];
                 $tiva_options['single-page']['share_btn_show'] = $_POST['share_btn_show'];
 
-                /********************************* BEGIN EDITED IN TIVA V5.8  ****************************/
+                /********************************* BEGIN EDITED IN   ****************************/
                 $tiva_options['single-page']['rrs_show'] = $_POST['rrs_show'];
 
-                /********************************* END EDITED IN TIVA V5.8 ******************************/
+                /********************************* END EDITED IN  ******************************/
 
                 break;
             case 'main-slider':
