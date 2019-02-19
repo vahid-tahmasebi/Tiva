@@ -1691,3 +1691,6 @@ include get_template_directory() . '/inc/email-template-generator.php'; // add i
 include get_template_directory() . '/admin/admin.php';
 include get_template_directory() . '/editor_plugins/plugins.php';
 include get_template_directory() . '/panel/panel.php';
+/********************************************* New Include To Function *********/
+include get_template_directory() . '/inc/option-in-wp/style-add-in-dashbord.php';
+include get_template_directory() . '/inc/option-in-wp/thaghire-name-wp.php';

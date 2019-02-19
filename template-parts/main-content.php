@@ -53,7 +53,7 @@
                 <div class="clearfix"></div>
                 <?php if (!empty($tiva_options['index-page']['index_videobox_show']) && $tiva_options['index-page']['index_videobox_show'] === 'true'): ?>
                     <header class="box-header">
-                        <span class="box-title">آخرین ویدیوها</span>
+                        <span class="box-title">جدید ترین ویدئو های آموزشی رایگان</span>
                         <span class="video-archive-link">
                         <a title="آرشیو ویدیوها" href="<?php echo get_post_type_archive_link('video'); ?>">+ همه ویدیو ها</a>
                     </span>
@@ -66,7 +66,7 @@
                     <div class="clearfix"></div>
                 <?php endif; ?>
                 <header class="box-header">
-                    <span class="box-title"><?php _e('آخرین مطالب', 'tiva'); ?></span>
+                    <span class="box-title"><?php _e('جدید ترین مقالات آموزشی رایگان', 'tiva'); ?></span>
                 </header>
                 <div class="card-wrapper main-content-inner">
                     <?php if (!empty($tiva_options['index-page']['index_search_show']) && $tiva_options['index-page']['index_search_show'] === 'true'): ?>

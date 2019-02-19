@@ -1,14 +1,14 @@
 /*
-Theme Name: Tiva
-Theme URI: https://zhaket.com/product/tiva-wordpress-theme/
-Author: Mohammad Reza Shirnejad
-Author URI: https://www.kari-no.com
-Description:قالب مجله ای ایرانی و حرفه ای تیوا ، محصولی از تیم برنامه نویسی و توسعه کارینو و مناسب انواع وب سایت های مجله ای و ... دارای پنل کاربری حرفه ای و کاربری شامل امکاناتی از جمله (علاقمندی های ، مشخصات کاربری ، ارسال مقاله ، مدیریت دیدگاه ها).این قالب کاملا واکنش گرا و مناسب برای نمایش در انواع دستگاه ها می باشد و داری صفحه ثبت نام اختصاصی و فراموشی رمز عبور و ورود اختصاصی نیز می باشد
+Theme Name: Karsazsho
+Theme URI: https://karsazsho.com
+Author: Karsazsho.com
+Author URI: https://karsazsho.com
+Description:قالب اختصاصی برای سایت کارسازشو
 Version: 5.8.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tiva
-Tags: تیم توسعه و برنامه نویسی کارینو ، تیوا ، قالب مجله ای و فروشگاهی تیوا
+Tags: تیم توسعه و برنامه نویسی کاراسازشو
 */
 /********************************* BEGIN CSS RESET STYLE**************************************/
 
@@ -12985,16 +12985,22 @@ body.lobibox-open {
 /********************************* end plyr  STYLE**************************************/
 /*************************************** Taghirat New ***********************************/
 /************************************** Menu Header Top ********************************/
-
 .header-menu-top{height: 50px;background-color:#28353d !important;line-height: 50px;}
 .header-menu-inner-top .menutop ul {list-style-type: none;list-style: none;list-style-image: none;margin-bottom: 0px !important;}
 .header-menu-inner-top .menutop ul li {padding: 10px 2px 1px 10px;display: inline;}
 .header-menu-inner-top .menutop ul li a {color: #aeb6b8;font-weight: 400;font-size: 13px;}
 .header-menu-inner-top .menutop ul li a:hover{color: #ffffff;-webkit-transition:color 0.5s;-o-transition:color 0.5s;transition: color 0.5s; }
 .container-in-top-menu {padding-right: 340px;padding-left: 15px;margin-right:10px ;margin-left: auto;}
-
+.Phone-top{
+  color: #ffffff;
+  margin-right: 20px;}
+.Phone-top i{
+  margin-left: 4px;
+  font-family: IRANSans;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 50px;}
 /*************************************** Menu Header Register  ************************************/
-
 #header div.navbar-login-section div.left-login-area a.login-btn, a.register-btn {
   color: #ffffff !important;
   box-sizing: border-box;
@@ -13008,9 +13014,7 @@ body.lobibox-open {
   text-decoration: none !important;
   background-color: #03a9f4;
 }
-
 /************************************** Div Box Top Slider Site ***********************************/
-
 .box-top-slider {height:90px;background-color:#ffffff;margin-top:10px;box-shadow:3px 3px 3px 3px #e9f2f9;border-radius: 5px;padding: 10px 0px 10px 0px;}
 .box-top-box{width: 222px;background-color: #ffffff;margin-right: 4px;padding: 0px 0px;margin-top: -8px;}
 div.box-top-box>img{float:right;margin-right:0px;margin-left:8px;}
@@ -13171,95 +13175,3 @@ i.fa.fa-chevron-up {
   margin-top: 7px !important;
   font-size: larger !important;
 }
-/*************************************** Box Download Theme Plugins *******************************/
-.box_index{
-  overflow: unset;
-  background: #fff;
-  border-radius: 7px 5px 7px 5px;
-  margin-top: 25px;
-  padding: 0px;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-}
-.box-title-download{
-  width: 100%;
-  height: 50px;
-  background-color: #28353d;
-  border-radius: 10px 10px;
-}
-.box-title-download>h4{color: #ffffff;line-height: 50px;margin-right: 5px}
-.box-download-main{
-  width: 100%;
-  background-color: #ffffff;
-  float: right;
-  border-radius: 10px;
-}
-.all-item-download-in-box{
-  width: 100%;
-  margin:10px 0px 0px 0px;
-}
-.item-downlload{
-  width: 90px;
-  height: 90px;
-  background-color: #28353d;
-  float: right;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-.item-downlload>img{
-  margin-top: 5px;
-  margin-right: 5px;
-
-}
-
-/**************************************** Box Tasvire Shakhes Download *****************************/
-.box-img-shakhes-download{
-  width:846px;
-  background-color:;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  box-shadow:0 1px 2px 1px #d3d2d3 ;
-}
-.box-img-shakhes-download>img{
-  width:836px;
-  height: 418px;
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-bottom: 7px;
-}
-.bax-buttom-tasvir-shakhes{
-  width: 100%;
-  height: 50px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: #;
-
-}
-.bottom-box-download{
-  color: #ffffff !important;
-  box-sizing: border-box;
-  outline: none !important;
-  font-size: 12px;
-  border: 1px solid #28353d;
-  padding: 10px 40px;
-  border-radius: 3px;
-  line-height: 40px;
-  margin: 5px;
-  text-decoration: none !important;
-  background-color: #28353d;
-}
-.fa-icon{margin-left: 5px;font-size: larger;}
-.livicon-evo-holder .lievo-svg-wrapper {
-  display: inline-block;
-  position: absolute !important;
-  top: -8px !important;
-  left: 110px !important;
-  width: 40%!important;
-  padding-bottom: 100%!important;
-  margin-left: 8px;
-  vertical-align: middle;
-  overflow: hidden!important;
-}
-
-
-

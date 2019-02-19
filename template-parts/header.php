@@ -1,8 +1,6 @@
 <?php $tiva_options = get_option('tiva_options');
 $noti_cookie = isset($_COOKIE['tiva_noti_close']);
-$noti_disable = $tiva_options['noti-bar-sitting']['noti-disable'];
-
-?>
+$noti_disable = $tiva_options['noti-bar-sitting']['noti-disable']; ?>
 <?php if ($noti_disable == 'true' || $noti_disable == ''): ?>
     <?php if ($noti_cookie == false): ?>
         <div class=""
@@ -29,7 +27,7 @@ $noti_disable = $tiva_options['noti-bar-sitting']['noti-disable'];
             </div>
         </div>
     <?php endif; endif; ?>
-<!--/********************************* BEGIN ADD IN TIVA V5.8.1  ****************************/-->
+<!--/********************************* BEGIN ADD IN   ****************************/-->
 <?php
 /**
  * Check if WooCommerce is active
@@ -45,7 +43,6 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
         <div class="clearfix"></div>
     </div>
 <?php } ?>
-
 <div class=" hidden-lg hidden-md mobile-header text-center">
     <?php if (!empty($tiva_options['index-page']['show_site_logo']) && $tiva_options['index-page']['show_site_logo'] === 'true' || !isset($tiva_options['index-page']['show_site_logo'])): ; ?>
         <a class="index-tiva-logo" href="<?php echo home_url() .'/' ; ?>"> <img class="tiva-logo" src="<?php echo (!empty($tiva_options['index-page']['site-logo'])) ? $tiva_options['index-page']['site-logo'] : ''; ?>" alt="لوگوی سایت خود را انتخاب کنید" title=" <?php bloginfo('name'); ?>"></a>
@@ -58,19 +55,27 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
             <h2 class="blog-description"><?php bloginfo('description'); ?></h2>
         </a>
     <?php endif; ?></div>
-<!--/********************************* END ADD IN TIVA V5.8.1 ******************************/-->
-<div class="header-menu-top hidden-xs hidden-sm hidden-md">
-    <div class="header-menu-inner-top container-in-top-menu hidden-xs hidden-sm hidden-md">
-        <div class="row">
-            <div class="col-lg-12 col-sm-12 col-xs-12">
-                <div class="menutop">
-                    <?php wp_nav_menu(array('theme_location' => 'tiva_header_top_main_menu', 'container_class' => 'theader-menu')); ?>
+<!--/********************************* END ADD IN  ******************************/-->
+<div class="header-menu-top">
+    <div class="header-menu-inner-top ">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10">
+                    <div class="menutop pull-right">
+                        <?php wp_nav_menu(array('theme_location' => 'tiva_header_top_main_menu', 'container_class' => 'theader-menu')); ?>
+                    </div>
+                </div>
+                <div class="col-xs-2 ">
+                    <div class="pull-left">
+                        <span class="fa fa-phone Phone-top">
+                        <i>۰۲۱-۲۸۴۲۷۷۸۱</i>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 
 <header id="header">
     <div class="container">

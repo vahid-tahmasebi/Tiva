@@ -46,12 +46,12 @@ global $post;
                     <div class="clearfix"></div>
                     <?php if (get_post_type() == 'download'): ?>
                         <div class="download">
-                            <a title="توضیحات بیشتر و دانلود" href="<?php the_permalink(get_the_ID()); ?>"><?php _e('توضیحات بیشتر و دانلود', 'tiva') ?></a>
+                            <a title="توضیحات بیشتر و دانلود" href="<?php the_permalink(get_the_ID()); ?>"><?php _e('میخواهم دانلود کنم', 'tiva') ?></a>
                         </div>
                     <?php endif; ?>
                     <?php if (get_post_type() == 'post'): ?>
                         <div class="download">
-                            <a title="بیشتر بخوانید" href="<?php the_permalink(get_the_ID()); ?>"><?php _e('بیشتر بخوانید', 'tiva') ?></a>
+                            <a title="بیشتر بخوانید" href="<?php the_permalink(get_the_ID()); ?>"><?php _e('میخواهم این مقاله را بخوانم', 'tiva') ?></a>
                         </div>
                     <?php endif; ?>
                 </div><!-- .entry-content -->
